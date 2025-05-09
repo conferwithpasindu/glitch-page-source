@@ -3,8 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CW</title>
-        <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/48f39c94-2fb7-4414-92ad-1a2ba1f033ce/cw-logo-2.png?v=1728384130602" />
+        <title>Live Shopping</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="https://cdn.glitch.global/48f39c94-2fb7-4414-92ad-1a2ba1f033ce/cw-logo-2.png?v=1728384130602"
+        />
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -38,6 +42,19 @@
                 text-align: center;
             }
 
+            .image-container {
+                margin: 30px auto;
+                max-width: 90%;
+                text-align: center;
+            }
+
+            .main-image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
             p {
                 font-size: 1.2rem;
                 color: #666666;
@@ -64,12 +81,23 @@
     <body>
         <nav>
             <div class="nav-container">
-                <img src="https://cdn.glitch.global/48f39c94-2fb7-4414-92ad-1a2ba1f033ce/cw-logo-2.png?v=1728384130602" alt="Logo" class="store-logo" />
-                <span class="nav-title">StoreName</span>
+                <img
+                    src="https://cdn.glitch.global/48f39c94-2fb7-4414-92ad-1a2ba1f033ce/cw-logo-2.png?v=1728384130602"
+                    alt="Logo"
+                    class="store-logo"
+                />
+                <span class="nav-title">Store Name</span>
             </div>
         </nav>
 
         <div class="content">
+            <div class="image-container">
+                <img
+                    src="https://conferwith.io/wp-content/uploads/video-shopping-webrooming-showrooming-confer-with.webp"
+                    alt="Brand-Img"
+                    class="main-image"
+                />
+            </div>
             <p></p>
         </div>
 
@@ -78,9 +106,13 @@
         </footer>
 
         <script>
-            document.querySelector(".store-logo").addEventListener("contextmenu",(function(e){e.preventDefault()})),console.log("pasindu@conferwith"),console.log(2+2),console.log("Page loaded");
+            document.querySelector('.store-logo').addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }),
+                console.log('pasindu@conferwith'),
+                console.log(2 + 2),
+                console.log('Page loaded');
         </script>
-
         <!-- <script src="https://live.conferwith.io/cdn/conferwith_widget.js" data-baseurl="" data-enable-embeddable="true"></script> -->
 
         <!-- <script src="https://live.conferwith.io/cdn/conferwith_widget.js"></script> -->
@@ -89,7 +121,7 @@
 
         <!-- <script src="https://live.conferwith.io/cdn/gtm.js"></script> -->
 
-        <!-- <script src="https://live.conferwith.io/cdn/gtm.js" data-baseurl=""></script> -->
+        <!-- <script src="https://live.conferwith.io/cdn/gtm.js" data-baseurl="PROD"></script> -->
 
         <!-- <script src="https://customer.instore-expert-dev.site/gtm.js"></script> -->
 
@@ -97,7 +129,6 @@
 
         <!-- <script src="https://customerv2.instore-expert-dev.site/gtm.js"></script> -->
 
-        <!-- <script src="https://customerv2.instore-expert-dev.site/gtm.js" data-baseurl=""></script> -->
-        
+        <!-- <script src="https://customerv2.instore-expert-dev.site/gtm.js" data-baseurl="UAT"></script> -->
     </body>
 </html>
