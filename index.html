@@ -90,6 +90,13 @@
             </div>
         </nav>
 
+        <br />
+        <div style="text-align: center">
+            <a href="?directcall=enabled">
+                <button>Direct Call</button>
+            </a>
+        </div>
+
         <div class="content">
             <div class="image-container">
                 <img
@@ -100,6 +107,28 @@
             </div>
             <p></p>
         </div>
+
+        <div style="margin: 20px; text-align: center">
+            <!-- Declarative (SDK auto-wires click) -->
+            <button data-conferwith="showSplash">Open Splash (data-conferwith)</button>
+            <button data-conferwith="startCall">Start Call (data-conferwith)</button>
+            <button data-conferwith="bookAppointment">Book Appointment (data-conferwith)</button>
+
+            <br /><br />
+
+            <!-- Manual method calls (direct JS) -->
+            <button onclick="Conferwith?.showSplash()">Open Splash (JS method)</button>
+            <button onclick="Conferwith?.startCall()">Start Call (JS method)</button>
+            <button onclick="Conferwith?.bookAppointment()">Book Appointment (JS method)</button>
+
+            <br /><br />
+
+            <!-- Link trigger (URL param way) -->
+            <a href="?conferwith-show-splash=true">
+                <button>Show Splash param</button>
+            </a>
+        </div>
+        <br />
 
         <footer>
             <p>&copy;</p>
@@ -113,11 +142,12 @@
                 console.log(2 + 2),
                 console.log('Page loaded');
         </script>
+
         <!-- <script src="https://live.conferwith.io/cdn/conferwith_widget.js" data-baseurl="" data-enable-embeddable="true"></script> -->
 
         <!-- <script src="https://live.conferwith.io/cdn/conferwith_widget.js"></script> -->
 
-        <!-- <script src="https://live.conferwith.io/cdn/conferwith_widget.js" data-baseurl=""></script> -->
+        <script src="https://live.conferwith.io/cdn/conferwith_widget.js" data-baseurl="shop_sandbox.com"></script>
 
         <!-- <script src="https://live.conferwith.io/cdn/gtm.js"></script> -->
 
